@@ -30,10 +30,11 @@ if __name__ == '__main__':
             data = pool.map(scrape, urls)  # ejecuto la función scrape en paralelo
             pool.close()  # cierro el pool
             pool.join()  # espero a que todos los procesos terminen
-            pool.close()
+
             for row in data:
                 print(row)
             main()
         else:
             print("Opción no válida")
             main()
+    main()
