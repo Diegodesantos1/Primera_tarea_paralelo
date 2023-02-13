@@ -35,7 +35,7 @@ if __name__ == "__main__":
         lista1 = []
         lista2 = []
     def main(): # función main
-        eleccion = solicitar_introducir_numero_extremo(Fore.CYAN +"¿Quieres ejecutar el programa en paralelo? 1: No, 2: Si, 3: Ver medias de tiempo de ejecución, 4: Guardar y Salir", 1, 4) ; print(Fore.RESET) # solicito al usuario que introduzca un número entre 1 y 3
+        eleccion = solicitar_introducir_numero_extremo(Fore.CYAN +"¿Quieres ejecutar el programa en paralelo? 1: No, 2: Si, 3: Ver medias de tiempo de ejecución, 4: Salir", 1, 4) ; print(Fore.RESET) # solicito al usuario que introduzca un número entre 1 y 3
 
         if eleccion == 1:  # main del programa sin paralelizar
             inicio = time.time() # guardo el tiempo en el que empieza el programa
@@ -71,10 +71,6 @@ if __name__ == "__main__":
             print("La media de tiempo de ejecución en paralelo es: ", sum(lista2) / len(lista2))
             main()
         elif eleccion == 4:
-            """ejecuta por terminal: git add ., git commit -m "Actualización de tiempos", git push"""
-            os.system("git add .")
-            os.system("git commit -m 'Actualización de tiempos'")
-            os.system("git push")
             exit() # salgo del programa
     main()
 
