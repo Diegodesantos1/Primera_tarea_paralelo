@@ -2,10 +2,12 @@
 
 En este [repositorio](https://github.com/Diegodesantos1/Primera_tarea_paralelo) quedan resuelto el ejercicio de primera tarea en paralelo.
 
-El código empleado 
+El código empleado para resolverlo es el siguiente
 
 <h2 align = "center">Main</h2>
+
 ```python
+
 import random  # importo la librería random
 import time # importo la librería time
 from time import sleep  # importo la función sleep de la libreria time¡
@@ -81,7 +83,36 @@ if __name__ == "__main__":
         elif eleccion == 4:
             exit() # salgo del programa
     main()
+    
 ```
+<h2 align = "center">Resultados</h2>
+Sin paralelizar:
+
+![image](https://user-images.githubusercontent.com/91721855/220146044-06cec8ac-b90d-4695-a691-cc8499ce86d4.png)
+
+Paralelizado:
+
+![image](https://user-images.githubusercontent.com/91721855/220146257-7eddb04a-d529-438b-8da7-c918a3a99769.png)
+
+
+<h2 align = "center">Contabilización del tiempo de ejecución medio</h2>
+
+Además he creado varias funciones que registran el tiempo de ejecución tanto en paralelo como sin paralelo.
+Estas funciones registran el tiempo en un archivo de texto como muestro a continuación:
+
+Tiempos en paralelo:
+
+![image](https://user-images.githubusercontent.com/91721855/220146835-0b5f7028-4663-430a-8c1d-f705b0748ea6.png)
+
+Tiempos sin paralelo:
+
+![image](https://user-images.githubusercontent.com/91721855/220146929-54aefef0-501f-49c5-af92-ad992270c5c5.png)
+
+Pudiendo mostrar la media del tiempo en cualquier momento:
+
+![image](https://user-images.githubusercontent.com/91721855/220147061-29c6b42f-d4cc-4155-9234-463b6a532d9b.png)
+
+
 <h2 align = "center">Conclusiones</h2>
 
 Se puede ver que el programa paralelizado es mucho más rápido que el programa sin paralelizar, ya que el programa paralelizado tarda bastante menos en ejecutarse mientras que el programa sin paralelizar tarda más tiempo en ejecutarse, generando al ordenador utilizar una mayor cantidad de recursos durante más tiempo.
